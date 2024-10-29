@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+   <!-- Navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-2xl sticky top-0 z-10">
+        <h1 class="text-2xl ">Greenden</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        
+        <ul class="gap-5 text-gray-600 hidden md:flex ">
+          <li>
+            <a href="index.html" class="hover:underline hover:black">Home</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:underline hover:black">Products</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:underline hover:black">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidenav -->
+      <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-600">
+          <li>
+            <a href="index.html" class="hover:underline hover:black">Home</a>
+          </li>
+          <li>
+            <a href="products.html" class="hover:underline hover:black">Products</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:underline hover:black">Contact</a>
+          </li>
+        </ul>
+      </section>
+      <!-- Our products -->
+      <section class="text-center">
+        <h1 class="text-4xl font-bold mt-8">Our Products</h1>
+        <input id="search" type="text" class="border border-black p-2 my-5" placeholder="Search for a Product...." style="width: 80%;">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 m-10">
+          <div>
+            <img src="./images/aloevera.jpeg" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Aloevera Plant</h1>
+            <p>Rs.100</p>
+          </div>
+          <div>
+            <img src="./images/ficus-plant.jpeg" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Ficus Plant</h1>
+            <p>Rs.170</p>
+          </div>
+          <div>
+            <img src="./images/bs-img-3.png" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Snake Plant</h1>
+            <p>Rs.340</p>
+          </div>
+          <div>
+            <img src="./images/air-purifier plant.jpeg" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Air Purifier Plant</h1>
+            <p>Rs.400</p>
+          </div>
+          <div>
+            <img src="./images/bs-img-1.png" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Rose Plant</h1>
+            <p>Rs.290</p>
+          </div>
+          <div>
+            <img src="./images/monstera.jpeg" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Monstera Plant</h1>
+            <p>Rs.250</p>
+          </div>
+          <div>
+            <img src="./images/ficus-plant.jpeg" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Ficus Plant</h1>
+            <p>Rs.190</p>
+          </div>
+          <div>
+            <img src="./images/bs-img-4.png" class="inline hover:shadow-md transform hover:-translate-y-2" style="width: 200px; height: 200px;" alt="">
+            <h1>Areca palm  Plant</h1>
+            <p>Rs.210</p>
+          </div>
+        </div>
+      </section>
+       <!-- Footer -->
+  <section class="bg-green-100 p-10 flex flex-col gap-5 ">
+    <h1 class="text-4xl font-bold">Greenden</h1>
+    <p>The Standard chunk of Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, facilis.</p>
+    <p>@ 2023 Greenday.com</p>
+  </section>
+  <script src="product.js">
+  </script>
+</body>
+</html>
